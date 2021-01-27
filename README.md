@@ -22,13 +22,17 @@ custom OMR sheet
 questions with 5 options
 each.
 
-![alt text](https://github.com/hemanth-nag/Optical_Mark_Recognition/blob/master/screenshots/image--004.png)
+![alt text](https://github.com/hemanth-nag/Optical_Mark_Recognition/blob/main/Screenshots/image--004.jpg)
 
+## 2)
 • After reading the
 image, we have to
 convert it to grayscale
 for easier processing.
 
+![alt text](https://github.com/hemanth-nag/Optical_Mark_Recognition/blob/main/Screenshots/image--005.jpg)
+
+## 3)
 • Convolve the
 grayscale image with
 gaussian blur filter of size
@@ -36,12 +40,16 @@ gaussian blur filter of size
 noises like salt and
 pepper noise.
 
+## 4)
 • Now, pass the 2 dimensional gray image into Canny edge
 detector.
 
 • The output of Canny
 edge detector is given:
 
+![alt text](https://github.com/hemanth-nag/Optical_Mark_Recognition/blob/main/Screenshots/image--010.jpg)
+
+## 5)
 • Next step is to find out where the
 omr sheet is in the image.
 
@@ -58,9 +66,14 @@ has four vertices.
 focus of the image and the omr
 sheet is rectangular in shape)
 
+
+## 6)
 • We crop out the region of interest
 i.e. the omr sheet.
 
+![alt text](https://github.com/hemanth-nag/Optical_Mark_Recognition/blob/main/Screenshots/image--013.jpg)
+
+## 7)
 • We now start the actual process of
 mark recognition.
 
@@ -73,6 +86,9 @@ This process is called thresholding.
 sets the threshold value
 automatically.
 
+![alt text](https://github.com/hemanth-nag/Optical_Mark_Recognition/blob/main/Screenshots/image--016.jpg)
+
+## 8)
 • This is the step where we identify the bubbles.
 
 • Find the contours again and find each of their aspect ratio
@@ -89,6 +105,8 @@ answer bubbles.
 • All the selected contours are arranged in ascending order(left to
 right and top to bottom).
 
+
+## 9)
 • We start the marks calculation process.
 
 • Since there are 5 options to each questions, we loop over 5
@@ -109,6 +127,8 @@ considered as marked.
 • If the user has marked more than 2 options, only the first one will be
 considered.
 
+
+## 10)
 • The question number
 and option number is
 being kept track of
@@ -123,6 +143,9 @@ calculated.
 
 The final output looks as
 follows:
+
+![alt text](https://github.com/hemanth-nag/Optical_Mark_Recognition/blob/main/Screenshots/image--020.jpg)
+![alt text](https://github.com/hemanth-nag/Optical_Mark_Recognition/blob/main/Screenshots/image--021.jpg)
 
 ## Conclusion and Future Scope:
 • We have successfully graded the OMR sheet using just Digital Image
