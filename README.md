@@ -10,8 +10,9 @@ bubbled answer sheets for MCQs.
 So, in this project, we are going to see how OMR is done on
 bubbled sheets using PYTHON.
 
-# Procedure:
+## Procedure:
 
+## 1)
 • Firstly, let’s consider an
 image that needs to be
 processed. The image
@@ -20,6 +21,8 @@ custom OMR sheet
 (courtesy: Internet) for 5
 questions with 5 options
 each.
+
+![alt text](https://github.com/hemanth-nag/Optical_Mark_Recognition/blob/master/screenshots/image--004.png)
 
 • After reading the
 image, we have to
@@ -121,7 +124,7 @@ calculated.
 The final output looks as
 follows:
 
-# Conclusion and Future Scope:
+## Conclusion and Future Scope:
 • We have successfully graded the OMR sheet using just Digital Image
 Processing. But the solution that’s proposed is not well generalized.
 The minimum size of bubbles and minimum number of non zero
@@ -131,3 +134,5 @@ constants specific to the given set of images.
 • So, we can work on a more generalized solution that works with any
 given OMR sheet.
 
+## Reference:
+[Bubble sheet multiple choice scanner and test grader using OMR, Python and OpenCV](https://www.pyimagesearch.com/2016/10/03/bubble-sheet-multiple-choice-scanner-and-test-grader-using-omr-python-and-opencv/)
