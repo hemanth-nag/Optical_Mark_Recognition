@@ -1,7 +1,7 @@
 # Optical_Mark_Recognition
 Optical Mark Recognition in OMR sheets.
 
-# Introduction:
+## Introduction:
 
 Optical Mark Recognition, or OMR for short, is the process
 of automaticallyanalyzing human- marked documents and
