@@ -1,6 +1,6 @@
 # Optical_Mark_Recognition
 Optical Mark Recognition in OMR sheets.
-
+Please refer the Jupyter notebook file for implementation code. 
 ## Introduction:
 
 Optical Mark Recognition, or OMR for short, is the process
